@@ -9,4 +9,6 @@ https://www.figma.com/design/6px3LZDRFJho9fhGTg167u/Blog-VideoIngenieriaViral?no
 
 # Consideraciones
 
-Se usó Bootstrap para el formulario de contacto. Omitirlo para esta entrega, me interesó tanto el curso que estuve viendo muchos videos de YouTube para continuar con el maquetado.
+Se usó Bootstrap para el formulario de contacto.
+
+Se tomaron algunas consideraciones de las correcciones de la primera pre-entrega.
