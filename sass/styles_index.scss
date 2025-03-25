@@ -8,26 +8,47 @@ $card-border-color: #EFFAFC;
 $footer-bg: #234556;
 $text-color: white;
 $font-family: "Inter", sans-serif;
+$btn-bg: red;
+$btn-text: white;
+$border-radius: 20px;
 
-// Mixins
+// Extensiones reutilizables
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%card-base {
+  width: 70%;
+  height: 240px;
+  border: 3px solid $card-border-color;
+  border-radius: $border-radius;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+%button-base {
+  border: none;
+  background-color: $btn-bg;
+  color: $btn-text;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: $border-radius;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: darken($btn-bg, 10%);
+  }
+}
+
+
 @mixin flexbox($justify: center, $align: center, $direction: row) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
-}
-
-@mixin border-radius($radius: 20px) {
-  border-radius: $radius;
-}
-
-@mixin button-style($bg-color: red, $text-color: white) {
-  border: none;
-  background-color: $bg-color;
-  color: $text-color;
-  padding: 10px 20px;
-  cursor: pointer;
-  @include border-radius(20px);
 }
 
 @mixin responsive($breakpoint) {
@@ -39,7 +60,7 @@ $font-family: "Inter", sans-serif;
   }
 }
 
-// Aplico los estilos de Nesting CSS en SASS
+// Estilos Generales
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +78,7 @@ $font-family: "Inter", sans-serif;
   height: 71px;
   background-color: $secondary-color;
   color: $text-color;
-  @include flexbox;
+  @extend %flex-center;
 }
 
 .logo {
@@ -83,22 +104,14 @@ $font-family: "Inter", sans-serif;
   margin: 20px;
 }
 
-.card-container, .card-redes {
-  width: 70%;
-  height: 240px;
-  border: 3px solid $card-border-color;
-  @include border-radius;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .card-container {
+  @extend %card-base;
   background-image: url("../assets/img/img_industria.jpg");
   opacity: 0.6;
 }
 
 .card-redes {
+  @extend %card-base;
   background-image: url("../assets/img/img_compu.jpg");
   opacity: 0.8;
   text-align: left;
@@ -127,10 +140,10 @@ footer {
   @include flexbox(space-around);
 
   button {
+    @extend %button-base;
     width: 25%;
     height: 35px;
     margin-left: 40px;
-    @include button-style;
   }
 }
 
