@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// Variables
+$primary-color: #2994B1;
+$secondary-color: #122C3A;
+$nav-color: #24627A;
+$card-border-color: #EFFAFC;
+$footer-bg: #234556;
+$text-color: white;
+$font-family: "Inter", sans-serif;
+
+// Mixins
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin border-radius($radius: 20px) {
+  border-radius: $radius;
+}
+
+@mixin button-style($bg-color: red, $text-color: white) {
+  border: none;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  cursor: pointer;
+  @include border-radius(20px);
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $breakpoint == tablet {
+    @media (max-width: 1024px) { @content; }
+  }
+}
+
+// Aplico los estilos de Nesting CSS en SASS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+.line-pages {
+  height: 10px;
+  background-color: $primary-color;
+}
+
+.header-container {
+  width: 100%;
+  height: 71px;
+  background-color: $secondary-color;
+  color: $text-color;
+  @include flexbox;
+}
+
+.logo {
+  width: 4.125rem;
+  padding: 15px 10px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 46px;
+  background-color: $nav-color;
+  list-style: none;
+  @include flexbox($gap: 30px);
+
+  li a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.card-information {
+  @include flexbox(space-around, center, row);
+  margin: 20px;
+}
+
+.card-container, .card-redes {
+  width: 70%;
+  height: 240px;
+  border: 3px solid $card-border-color;
+  @include border-radius;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-container {
+  background-image: url("../assets/img/img_industria.jpg");
+  opacity: 0.6;
+}
+
+.card-redes {
+  background-image: url("../assets/img/img_compu.jpg");
+  opacity: 0.8;
+  text-align: left;
+}
+
+.line-section {
+  background-color: $secondary-color;
+  height: 4px;
+  width: 40%;
+  margin: 30px;
+}
+
+footer {
+  width: 100%;
+  background-color: $footer-bg;
+  padding: 10px 0;
+  @include flexbox(space-around, center, row);
+  color: $text-color;
+}
+
+.boton-container {
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid #D7F1F6;
+  background-color: #D7F1F6;
+  @include flexbox(space-around);
+
+  button {
+    width: 25%;
+    height: 35px;
+    margin-left: 40px;
+    @include button-style;
+  }
+}
+
+// Responsive Design
+@include responsive(mobile) {
+  .card-information {
+    flex-direction: column;
+  }
+}
