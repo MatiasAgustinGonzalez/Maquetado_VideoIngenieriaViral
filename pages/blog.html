@@ -16,6 +16,7 @@
         <img src="../assets/img/logoVIV.png" alt="Logo VideoIngenieriaViral" class="logo" />
       </div>
       <h1 class="header-title">VIDEO INGENIERIA VIRAL</h1>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
     </div>
     <nav>
       <ul class="nav-bar">
@@ -224,6 +225,13 @@
     </div>
   </footer>
   <hr class="line-pages" />
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-bar");
+      nav.classList.toggle("nav-visible");
+    }
+  </script>
 </body>
 
 </html>

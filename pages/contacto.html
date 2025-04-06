@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,26 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles_index.css" />
 </head>
+
 <body>
   <header>
     <div class="header-containe">
       <div>
-        <img src="../assets/img/logoVIV.png" alt="Logo VideoIngenieriaViral" class="logo"/>
+        <img src="../assets/img/logoVIV.png" alt="Logo VideoIngenieriaViral" class="logo" />
       </div>
       <h1 class="header-title">VIDEO INGENIERIA VIRAL</h1>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
     </div>
     <nav>
       <ul class="nav-bar">
-        <li><a href="../index.html"><img src="../assets/img/logoHome.png" alt="" class="img-nav"/>INICIO</a></li>
-        <li><a href="../pages/nosotros.html"><img src="../assets/img/logoAbout.png" alt="" class="img-nav"/>NOSOTROS</a></li>
-        <li><a href="../pages/blog.html"><img src="../assets/img/logoTexto.png" alt="" class="img-nav"/>BLOG</a></li>
-        <li><a href="../pages/canal.html"><img src="../assets/img/logoYouTubeBlancoyNegro.png" alt="" class="img-nav"/>CANAL</a></li>
-        <li><a href="../pages/contacto.html"><img src="../assets/img/logoContacto.png" alt="" class="img-nav"/>CONTACTO</a></li>
+        <li><a href="../index.html"><img src="../assets/img/logoHome.png" alt="" class="img-nav" />INICIO</a></li>
+        <li><a href="../pages/nosotros.html"><img src="../assets/img/logoAbout.png" alt=""
+              class="img-nav" />NOSOTROS</a></li>
+        <li><a href="../pages/blog.html"><img src="../assets/img/logoTexto.png" alt="" class="img-nav" />BLOG</a></li>
+        <li><a href="../pages/canal.html"><img src="../assets/img/logoYouTubeBlancoyNegro.png" alt=""
+              class="img-nav" />CANAL</a></li>
+        <li><a href="../pages/contacto.html"><img src="../assets/img/logoContacto.png" alt=""
+              class="img-nav" />CONTACTO</a></li>
         <li><a href="#"><img src="../assets/img/logoAvatar.png" alt="Logo Usuario" class="img-nav"></a></li>
       </ul>
     </nav>
@@ -45,54 +51,62 @@
     </form>
   </main> -->
   <main class="container my-5">
-  <form>
-    <p class="h4 mb-4">Ponte en contacto con nosotros</p>
-    
-    <div class="form-group mb-3">
-      <label for="nombre">Ingrese Nombre:</label>
-      <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
-    </div>
+    <form>
+      <p class="h4 mb-4">Ponte en contacto con nosotros</p>
 
-    <div class="form-group mb-3">
-      <label for="apellido">Ingrese Apellido:</label>
-      <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
-    </div>
+      <div class="form-group mb-3">
+        <label for="nombre">Ingrese Nombre:</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+      </div>
 
-    <div class="form-group mb-3">
-      <label for="email">Ingrese Email:</label>
-      <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
-    </div>
+      <div class="form-group mb-3">
+        <label for="apellido">Ingrese Apellido:</label>
+        <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
+      </div>
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
-</main>
-<footer>
-  <div class="redes-container">
-    <p>Nuestras Redes</p>
-    <ul class="redes-footer">
-      <li><a href=""><img src="../assets/img/logoInstagram.png" alt="Logo Instagram"></a></li>
-      <li><a href=""><img src="../assets/img/logoLinkedIn.png" alt="Logo LinkedIn"></a></li>
-      <li><a href=""><img src="../assets/img/logoYouTube.png" alt="Logo YouTube" class="img-footerYoutube"></a></li>
-    </ul>
-  </div>
-  <div class="contacto-container">
-    <p>Contacto</p>
-    <ul>
-      <li>elviogonzalez@gmail.com</li>
-      <li>Córdoba, Argentina</li>
-    </ul>
-  </div>
-  <div class="suscripcion-container">
-    <p>Recibe Información Útil</p>
-    <div class="boton-container">
-      <p>Ingrese su email</p>
-      <button>Suscribite</button>
+      <div class="form-group mb-3">
+        <label for="email">Ingrese Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </main>
+  <footer>
+    <div class="redes-container">
+      <p>Nuestras Redes</p>
+      <ul class="redes-footer">
+        <li><a href=""><img src="../assets/img/logoInstagram.png" alt="Logo Instagram"></a></li>
+        <li><a href=""><img src="../assets/img/logoLinkedIn.png" alt="Logo LinkedIn"></a></li>
+        <li><a href=""><img src="../assets/img/logoYouTube.png" alt="Logo YouTube" class="img-footerYoutube"></a></li>
+      </ul>
     </div>
-  </div>
-</footer>
+    <div class="contacto-container">
+      <p>Contacto</p>
+      <ul>
+        <li>elviogonzalez@gmail.com</li>
+        <li>Córdoba, Argentina</li>
+      </ul>
+    </div>
+    <div class="suscripcion-container">
+      <p>Recibe Información Útil</p>
+      <div class="boton-container">
+        <p>Ingrese su email</p>
+        <button>Suscribite</button>
+      </div>
+    </div>
+  </footer>
   <!-- Bootstrap JS and dependencies (optional but recommended) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-bar");
+      nav.classList.toggle("nav-visible");
+    }
+  </script>
 </body>
+
 </html>

@@ -34,6 +34,15 @@
   justify-content: center;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .nav-bar {
   width: 100%;
   height: 46px;
@@ -415,4 +424,122 @@ footer {
   color: white;
   border: none;
   background-color: red;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+  /* MENU DESPLEGABLE */
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+  }
+
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #122C3A;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .nav-bar.nav-visible {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+    background-color: #0d1e26;
+    border-bottom: 1px solid #24627A;
+    height: auto;
+  }
+
+  .nav-bar li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-bar li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .header-containe {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: 1rem 0;
+  }
+
+  .header-title {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .card-redes,
+  .line-section {
+    display: none;
+  }
+
+  .card-information,
+  .title-section {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .card-information p {
+    font-size: 13px;
+  }
+
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* En blog, artículos uno debajo del otro */
+  .blog-section,
+  .blog-container,
+  .blog-group {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .blog-group .blog-container {
+    width: 100%;
+  }
+
+  /* En canal, videos uno abajo del otro */
+  .canal-video-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .canal-video-grid iframe {
+    height: 18.75rem;
+  }
 }
