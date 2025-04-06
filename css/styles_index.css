@@ -7,13 +7,13 @@
   font-family: "Inter", sans-serif;
 }
 
-.line-pages{
+.line-pages {
   height: .625rem;
   background-color: #2994B1;
   border-color: #2994B1;
 }
 
-.header-containe{
+.header-containe {
   width: 100%;
   height: 71px;
   background-color: #122C3A;
@@ -22,17 +22,19 @@
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   width: 4.125rem;
   padding: .9375rem .625rem;
 }
+
 .header-title {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.nav-bar{
+.nav-bar {
   width: 100%;
   height: 46px;
   background-color: #24627A;
@@ -42,16 +44,19 @@
   align-items: center;
   gap: 30px;
 }
-.nav-bar li a{
+
+.nav-bar li a {
   color: black;
   text-decoration: none;
 }
-.img-nav{
+
+.img-nav {
   align-self: flex-end;
   align-items: end;
 }
 
-.img-nav, .redes-footer img{
+.img-nav,
+.redes-footer img {
   width: 1.25rem;
 }
 
@@ -62,171 +67,351 @@
 }
 
 
-.card-information{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1.25rem;
-  }
-  .card-container{
-    width: 70%;
-    height: 240px;
-    border: 3px solid #EFFAFC;
-    border-radius: 20px;
-    background-image: url("../assets/img/img_industria.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-  }
-  .card-container h2, .card-container p{
-    padding: 10px;
-    opacity: 1;
-  }
-  .card-redes{
-    margin-left: 10px;
-    width: 100%;
-    height: 240px;
-    border: 3px solid #EFFAFC;
-    border-radius: 20px;
-    background-image: url("../assets/img/img_compu.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    text-align:left;
-  }
-  .card-redes li{
-    list-style: none;
-  }
-  .card-redes li a{
-    text-decoration: none;
-    color:white;
-  }
-  
+.card-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.25rem;
+}
 
-  .card-misionvision{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 4.375rem;
-    margin: 2.5rem;
-  }
-  .card-container-misionvision{
-    width: 70%;
-    height: 240px;
-    border: 3px solid #EFFAFC;
-    border-radius: 20px;
-    text-align:justify;
-    padding: .9375rem;
-  }
-  .card-container-misionvision h2{
-    text-align: center;
-  }
+.card-container {
+  width: 70%;
+  height: 240px;
+  border: 3px solid #EFFAFC;
+  border-radius: 20px;
+  background-image: url("../assets/img/img_industria.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.card-container h2,
+.card-container p {
+  padding: 10px;
+  opacity: 1;
+}
+
+.card-redes {
+  margin-left: 10px;
+  width: 100%;
+  height: 240px;
+  border: 3px solid #EFFAFC;
+  border-radius: 20px;
+  background-image: url("../assets/img/img_compu.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.card-redes li {
+  list-style: none;
+}
+
+.card-redes li a {
+  text-decoration: none;
+  color: white;
+}
 
 
-  .line-section{
-    background-color: #122C3A;
-    height: 4px;
-    width: 40%;
-    margin: 1.875rem;
-  }
-  .title-section{
-    margin-left: 1.875rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .videos-container{
-    height: 25rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: -2.5rem 0rem;
-  }
-  .card{
-    background-color: #C2C2C2;
-  }
-  .header-card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .625rem;
-    margin: 1.25rem;
-  }
-  .video-card {
-    width: 90%;
-    height: 170px;
-    margin-left: .9375rem;
-    margin-bottom: 1.25rem;
-  }
-  .information-section{
-    margin: .9375rem 0rem 1.875rem 1.875rem;
-    font-size: 15px;
-  }
+/* Styles solo para HTML Nosotros */
+.card-misionvision {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 4.375rem;
+  margin: 2.5rem;
+}
 
-  footer{
-    width: 100%;
-    background-color: #234556;
-    padding: .625rem 0rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-  }
-  .redes-container{
-    width: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .redes-footer{
-    display: flex;
-    justify-content: center;
-    margin-right: .9375rem;
-  }
-  .redes-footer li{
-    list-style: none;
-    margin-left: .625rem;
-  }
-  .contacto-container{
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contacto-container li {
-    list-style: none;
-  }
-  .suscripcion-container{
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .boton-container{
-    width: 100%;
-    height: 2.4375rem;
-    border: 1px solid #D7F1F6;
-    border-radius: 1.25rem;
-    background-color: #D7F1F6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5rem;
-  }
-  .boton-container p{
-    color: black;
-    font-size: 14px;
-  }
-  .boton-container button{
-    width: 30%;
-    height: 35px;
-    margin-left: 10px;
-    border-radius: 1.25rem;
-    color: white;
-    border: none;
-    background-color: red;
-  } 
+.card-container-misionvision {
+  width: 50%;
+  height: 240px;
+  border: 3px solid #EFFAFC;
+  background-color: #09b3e211;
+  border-radius: 20px;
+  text-align: justify;
+  padding: .9375rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container-misionvision h2 {
+  text-align: center;
+}
+
+.card-container-misionvision:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #09b3e228;
+}
+
+
+
+/* Styles solo para HTML Index */
+.line-section {
+  background-color: #122C3A;
+  height: 4px;
+  width: 40%;
+  margin: 1.875rem;
+}
+
+.title-section {
+  margin-left: 1.875rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.videos-container {
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: -2.5rem 0rem;
+}
+
+.card {
+  background-color: #C2C2C2;
+}
+
+.header-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .625rem;
+  margin: 1.25rem;
+}
+
+.video-card {
+  width: 90%;
+  height: 170px;
+  margin-left: .9375rem;
+  margin-bottom: 1.25rem;
+}
+
+.information-section {
+  margin: .9375rem 0rem 1.875rem 1.875rem;
+  font-size: 15px;
+}
+
+
+
+/* Styles solo para HTML Blog */
+section {
+  display: flex;
+  gap: 3.125rem;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.blog-container {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+.blog-container p {
+  margin-bottom: .1875rem;
+}
+
+.blog-group .blog-container p:first-of-type {
+  margin-top: 1.25rem;
+}
+
+
+.blog-container button {
+  margin-top: .625rem;
+  background-color: #09B3E2;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.blog-container button:hover {
+  background-color: #067fa4;
+}
+
+/* Tarjeta destacada */
+section article:first-child {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Contenedor de los otros artículos */
+section>.blog-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.125rem;
+}
+
+/* Tarjetas de la columna derecha */
+.blog-group .blog-container {
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-group .blog-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer con fecha y botón en la misma línea */
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.blog-footer p {
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.blog-footer button {
+  background-color: #09B3E2;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.blog-footer button:hover {
+  background-color: #067fa4;
+}
+
+
+
+/* Styles solo para HTML Canal */
+.canal-section {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  padding: 3rem;
+  text-align: center;
+}
+
+
+.canal-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #09B3E2;
+}
+
+.canal-description {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.canal-video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+.canal-video-grid iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Footer para todos los HTML's */
+footer {
+  width: 100%;
+  background-color: #234556;
+  padding: .625rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.redes-container {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes-footer {
+  display: flex;
+  justify-content: center;
+  margin-right: .9375rem;
+}
+
+.redes-footer li {
+  list-style: none;
+  margin-left: .625rem;
+}
+
+.contacto-container {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-container li {
+  list-style: none;
+}
+
+.suscripcion-container {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-container {
+  width: 100%;
+  height: 2.4375rem;
+  border: 1px solid #D7F1F6;
+  border-radius: 1.25rem;
+  background-color: #D7F1F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+
+.boton-container p {
+  color: black;
+  font-size: 14px;
+}
+
+.boton-container button {
+  width: 30%;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 1.25rem;
+  color: white;
+  border: none;
+  background-color: red;
+}
