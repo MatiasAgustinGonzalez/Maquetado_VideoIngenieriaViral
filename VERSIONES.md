@@ -2,6 +2,12 @@
 
 Este archivo documenta los cambios y actualizaciones realizados en el proyecto. Se sigue un esquema de versionado semántico: vX.Y.Z (mayor.menor.parche).
 
+### V 0.4.8 | Modificaciones Información General
+
+### V 0.4.7 | Creación Responsive
+
+* Creación de Responsive para mobile
+
 ### V 0.4.6 | Modificación Estilos en los videos
 
 ### V 0.4.5 | Modificación Estilos en Nosotros, Blog y Canal

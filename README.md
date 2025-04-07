@@ -9,6 +9,11 @@ https://www.figma.com/design/6px3LZDRFJho9fhGTg167u/Blog-VideoIngenieriaViral?no
 
 # Consideraciones
 
-Se usó Bootstrap para el formulario de contacto.
+* Se usó Bootstrap para el formulario de contacto.
+* Se trabajaron todas las devoluciones de las preentregas corregidas.
+* Se trabajó en un archivo de control de versiones llamado VERSIONES.md
 
-Se tomaron algunas consideraciones de las correcciones de la primera pre-entrega.
+
+# Deploy en Vercel
+
+* Link a continuación:  maquetado-viv.vercel.app
