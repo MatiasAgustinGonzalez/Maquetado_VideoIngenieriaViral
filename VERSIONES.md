@@ -2,6 +2,9 @@
 
 Este archivo documenta los cambios y actualizaciones realizados en el proyecto. Se sigue un esquema de versionado semántico: vX.Y.Z (mayor.menor.parche).
 
+### "V 0.4.9 | Modificacion Responsive"
+* Modificación de responsive en el footer y agregado de animación para el icono menu
+
 ### V 0.4.8 | Modificaciones Información General
 
 ### V 0.4.7 | Creación Responsive

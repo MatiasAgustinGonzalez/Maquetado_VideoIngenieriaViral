@@ -643,6 +643,23 @@ footer {
   }
 
 
+  .card-misionvision {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .card-container-misionvision {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+
+
+
   footer {
     flex-direction: column;
     align-items: center;
@@ -656,6 +673,10 @@ footer {
   .suscripcion-container {
     width: 100%;
     align-items: center;
+  }
+
+  .contacto-container {
+    display: none;
   }
 
   .redes-footer {
@@ -694,7 +715,74 @@ footer {
   }
 
 
+
+
+  /* BLOG RESPONSIVE */
+  .section-blog {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .section-blog article,
+  .section-blog .blog-group {
+    width: 100%;
+  }
+
+  .blog-container {
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-spacing: 0.05rem;
+    text-align: justify;
+  }
+
+  .blog-container h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-container button {
+    width: auto;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .blog-footer {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
 }
+
+
+/* CANAL RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .canal-video-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .canal-video-grid iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .canal-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .canal-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
 
 
 @media screen and (max-width: 550px) {
