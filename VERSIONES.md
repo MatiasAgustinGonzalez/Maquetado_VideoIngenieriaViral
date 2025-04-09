@@ -2,6 +2,8 @@
 
 Este archivo documenta los cambios y actualizaciones realizados en el proyecto. Se sigue un esquema de versionado semántico: vX.Y.Z (mayor.menor.parche).
 
+### V 0.4.12 | Consideraciones Finales
+
 ### V 0.4.11 | maquetado final de pagina Blog
 
 ### V 0.4.10 | Agregado de keywords
