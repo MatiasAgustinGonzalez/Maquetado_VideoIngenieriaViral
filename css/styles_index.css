@@ -541,9 +541,13 @@ footer {
   .hamburger {
     display: block;
     position: absolute;
-    top: 1rem;
+    top: .8125rem;
     right: 1rem;
     z-index: 1001;
+  }
+
+  .header-title {
+    margin-right: 3.125rem;
   }
 
   .nav-bar {
@@ -637,6 +641,7 @@ footer {
   .card {
     width: 90%;
     padding: 1rem;
+    height: auto;
   }
 
   .header-card {
