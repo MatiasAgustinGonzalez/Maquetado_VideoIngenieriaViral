@@ -123,8 +123,12 @@
 .card-redes li a {
   text-decoration: none;
   color: black;
+  margin-left: 1.25rem;
 }
 
+.card-redes li img {
+  margin-top: 1.125rem;
+}
 
 /* Styles solo para HTML Nosotros */
 .card-misionvision {
