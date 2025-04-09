@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -427,17 +428,13 @@ footer {
 }
 
 
-/* Responsive */
+
+
+
+/* Responsive navbar */
 @media screen and (max-width: 768px) {
-
-  /* MENU DESPLEGABLE */
-
   .hamburger {
     display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 9999;
   }
 
   .nav-bar {
@@ -446,18 +443,15 @@ footer {
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #122C3A;
+    background-color: #0d1e26;
     width: 100%;
     padding: 1rem 0;
-    z-index: 9999;
+    z-index: 1000;
   }
 
   .nav-bar.nav-visible {
     display: flex;
     animation: slideDown 0.3s ease-in-out;
-    background-color: #0d1e26;
-    border-bottom: 1px solid #24627A;
-    height: auto;
   }
 
   .nav-bar li {
@@ -468,42 +462,7 @@ footer {
   .nav-bar li a {
     color: white;
     font-weight: bold;
-    text-decoration: none;
   }
-
-  .header-containe {
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: .5rem;
-    padding: 1rem 0;
-  }
-
-  .header-title {
-    font-size: 1.3rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .card-redes,
-  .line-section {
-    display: none;
-  }
-
-  .card-information,
-  .title-section {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .card-information p {
-    font-size: 13px;
-  }
-
 }
 
 @keyframes slideDown {
@@ -518,28 +477,229 @@ footer {
   }
 }
 
+/* Botón hamburguesa y animación */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
 
+.hamburger::before {
+  content: '☰';
+}
+
+.hamburger.active::before {
+  content: '✕';
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* BOTÓN HAMBURGUESA Y NAVBAR RESPONSIVE */
 @media screen and (max-width: 768px) {
 
-  /* En blog, artículos uno debajo del otro */
-  .blog-section,
-  .blog-container,
-  .blog-group {
-    flex-direction: column !important;
+  body {
+    overflow-x: hidden;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+  }
+
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #0d1e26;
     width: 100%;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .nav-bar.nav-visible {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+    height: auto;
+  }
+
+  .nav-bar li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-bar li a {
+    color: white;
+    font-weight: bold;
+  }
+
+  .card-information {
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
 
-  .blog-group .blog-container {
+  .card-container {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+  }
+
+  .card-container h2,
+  .card-container p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #000;
+  }
+
+  .card-redes {
+    display: none;
+  }
+
+}
+
+/* ANIMACIÓN Y ESTADO DEL BOTÓN HAMBURGUESA */
+.hamburger::before {
+  content: '☰';
+}
+
+.hamburger.active::before {
+  content: '✕';
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .videos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    height: auto;
+  }
+
+  .card {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .header-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .video-card {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
   }
 
-  /* En canal, videos uno abajo del otro */
-  .canal-video-grid {
-    grid-template-columns: 1fr !important;
+  .line-section {
+    width: 80%;
+    margin: 1.5rem auto;
   }
 
-  .canal-video-grid iframe {
-    height: 18.75rem;
+  .title-section {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .information-section {
+    margin: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .redes-container,
+  .contacto-container,
+  .suscripcion-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .redes-footer {
+    margin: 0.5rem 0;
+    gap: 1rem;
+  }
+
+  .redes-footer li {
+    margin: 0;
+  }
+
+  .boton-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .boton-container p {
+    font-size: 14px;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .boton-container button {
+    height: 35px;
+    padding: 0 1rem;
+    border-radius: 1.25rem;
+    color: white;
+    border: none;
+    background-color: red;
+    white-space: nowrap;
+  }
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+  .header-title {
+    font-size: 25px;
+    text-align: center;
   }
 }

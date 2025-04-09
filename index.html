@@ -20,8 +20,8 @@
         <img src="./assets/img/logoVIV.png" alt="Logo VideoIngenieriaViral" class="logo" />
       </div>
       <h1 class="header-title">VIDEO INGENIERIA VIRAL</h1>
+      <button class="hamburger" onclick="toggleMenu()"></button>
     </div>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
     <nav>
       <ul class="nav-bar">
         <li><a href="#"><img src="./assets/img/logoHome.png" alt="" class="img-nav" />INICIO</a></li>
@@ -163,9 +163,13 @@
   <script>
     function toggleMenu() {
       const nav = document.querySelector(".nav-bar");
+      const btn = document.querySelector(".hamburger");
       nav.classList.toggle("nav-visible");
+      btn.classList.toggle("active");
     }
   </script>
+
+
 </body>
 
 </html>
